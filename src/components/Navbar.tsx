@@ -1,20 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  {
-    label: "Medicare",
-    to: "/medicare",
-    children: [
-      { label: "Medicare Overview", to: "/medicare" },
-      { label: "Medicare Advantage", to: "/medicare#advantage" },
-      { label: "Medicare Supplement", to: "/medicare#supplement" },
-      { label: "Medicare Part D", to: "/medicare#partd" },
-    ],
-  },
+  { label: "Medicare", to: "/medicare" },
   {
     label: "Locations",
     to: "/california",
@@ -38,12 +29,12 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">RR</span>
+          <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+            <span className="text-accent-foreground font-bold text-lg">RR</span>
           </div>
           <div className="leading-tight">
-            <span className="font-bold text-primary text-base md:text-lg block">River Rock</span>
-            <span className="text-xs text-muted-foreground">Insurance Services</span>
+            <span className="font-bold text-primary text-base md:text-lg block tracking-tight">RIVER ROCK</span>
+            <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Insurance Services</span>
           </div>
         </Link>
 
@@ -58,11 +49,12 @@ const Navbar = () => {
             >
               <Link
                 to={link.to}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-accent ${
+                className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors hover:text-accent flex items-center gap-1 ${
                   location.pathname === link.to ? "text-accent" : "text-foreground"
                 }`}
               >
                 {link.label}
+                {link.children && <ChevronDown className="w-3.5 h-3.5" />}
               </Link>
               {link.children && openDropdown === link.label && (
                 <div className="absolute top-full left-0 bg-card border rounded-lg shadow-lg py-2 min-w-[200px] animate-fade-in">
@@ -82,11 +74,11 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:+19165551234" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-accent">
+          <a href="tel:+19168658352" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-accent">
             <Phone className="w-4 h-4" />
-            (916) 555-1234
+            (916) 865-8352
           </a>
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
             <Link to="/contact">Get a Free Quote</Link>
           </Button>
         </div>

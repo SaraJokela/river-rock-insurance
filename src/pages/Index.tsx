@@ -4,13 +4,13 @@ import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Shield, Users, MapPin, Heart, CheckCircle, ArrowRight } from "lucide-react";
+import { Shield, Users, MapPin, Heart, CheckCircle, ArrowRight, Pill } from "lucide-react";
 
 const services = [
-  { icon: Shield, title: "Medicare Advantage", desc: "All-in-one plans combining hospital, medical, and often prescription drug coverage." },
-  { icon: Heart, title: "Medicare Supplement", desc: "Fill the gaps in Original Medicare with predictable out-of-pocket costs." },
-  { icon: CheckCircle, title: "Medicare Part D", desc: "Prescription drug coverage that helps reduce your medication costs." },
-  { icon: Users, title: "Individual & Family", desc: "Health insurance solutions for individuals and families of all sizes." },
+  { icon: Shield, title: "Medicare Advantage", desc: "All-in-one plans combining hospital, medical, and often prescription drug coverage.", to: "/medicare#advantage" },
+  { icon: Heart, title: "Medicare Supplement", desc: "Fill the gaps in Original Medicare with predictable out-of-pocket costs.", to: "/medicare#supplement" },
+  { icon: Pill, title: "Medicare Part D", desc: "Prescription drug coverage that helps reduce your medication costs.", to: "/medicare#partd" },
+  { icon: Users, title: "Individual & Family", desc: "Health insurance solutions for individuals and families of all sizes.", to: "/contact" },
 ];
 
 const locations = [
@@ -22,9 +22,11 @@ const locations = [
 const Index = () => (
   <Layout>
     <HeroSection
-      subtitle="Trusted Since 2003"
-      title="Navigate Medicare with Confidence"
-      description="River Rock Insurance Services is a licensed Medicare brokerage serving California and Hawaii. We help you find the right plan — for free."
+      subtitle="California & Hawaii"
+      title="Expert Medicare Guidance. Always Free."
+      highlightWord="Guidance."
+      description="River Rock Insurance has helped thousands of Californians navigate Medicare since 2003. Licensed agents. Zero cost. Best rates guaranteed."
+      showStats
     />
 
     {/* Services */}
@@ -110,16 +112,16 @@ const Index = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-16 md:py-24 bg-accent text-accent-foreground">
+    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
       <div className="container text-center max-w-2xl mx-auto space-y-6">
         <h2 className="text-2xl md:text-3xl font-bold">Ready to Find the Right Medicare Plan?</h2>
         <p className="opacity-90">Talk to a licensed agent today. It's free, fast, and there's zero obligation.</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
             <Link to="/contact">Get Your Free Quote</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10">
-            <a href="tel:+19165551234">Call Now</a>
+          <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <a href="tel:+19168658352">Call (916) 865-8352</a>
           </Button>
         </div>
       </div>

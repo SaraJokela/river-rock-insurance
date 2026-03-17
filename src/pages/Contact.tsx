@@ -4,8 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "(916) 555-1234", href: "tel:+19165551234" },
-  { icon: Mail, label: "Email", value: "info@riverrockinsurance.com", href: "mailto:info@riverrockinsurance.com" },
+  { icon: Phone, label: "Phone", value: "(916) 865-8352", href: "tel:+19168658352" },
+  { icon: Mail, label: "Email", value: "help@plansforhealth.com", href: "mailto:help@plansforhealth.com" },
   { icon: MapPin, label: "Offices", value: "Sacramento & Roseville, CA" },
   { icon: Clock, label: "Hours", value: "Mon–Fri 8am–5pm PST" },
 ];

@@ -23,10 +23,10 @@ const Footer = () => (
         <div>
           <h4 className="font-bold mb-4">Medicare Plans</h4>
           <ul className="space-y-2 text-sm opacity-80">
-            <li><Link to="/medicare" className="hover:opacity-100 transition-opacity">Medicare Advantage</Link></li>
-            <li><Link to="/medicare" className="hover:opacity-100 transition-opacity">Medicare Supplement</Link></li>
-            <li><Link to="/medicare" className="hover:opacity-100 transition-opacity">Medicare Part D</Link></li>
-            <li><Link to="/medicare" className="hover:opacity-100 transition-opacity">Individual & Family</Link></li>
+            <li><Link to="/medicare#advantage" className="hover:opacity-100 transition-opacity">Medicare Advantage</Link></li>
+            <li><Link to="/medicare#supplement" className="hover:opacity-100 transition-opacity">Medicare Supplement</Link></li>
+            <li><Link to="/medicare#partd" className="hover:opacity-100 transition-opacity">Medicare Part D</Link></li>
+            <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Individual & Family</Link></li>
           </ul>
         </div>
 
@@ -43,8 +43,8 @@ const Footer = () => (
         <div>
           <h4 className="font-bold mb-4">Contact Us</h4>
           <ul className="space-y-3 text-sm opacity-80">
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> (916) 555-1234</li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@riverrockinsurance.com</li>
+            <li><a href="tel:+19168658352" className="flex items-center gap-2 hover:opacity-100"><Phone className="w-4 h-4" /> (916) 865-8352</a></li>
+            <li><a href="mailto:help@plansforhealth.com" className="flex items-center gap-2 hover:opacity-100"><Mail className="w-4 h-4" /> help@plansforhealth.com</a></li>
             <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5" /> Sacramento & Roseville, CA</li>
           </ul>
         </div>
@@ -55,7 +55,6 @@ const Footer = () => (
         <div className="flex gap-4">
           <Link to="/about" className="hover:opacity-100">About</Link>
           <Link to="/contact" className="hover:opacity-100">Contact</Link>
-          <span>CA License #0000000</span>
         </div>
       </div>
     </div>
