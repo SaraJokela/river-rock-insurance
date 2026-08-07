@@ -33,7 +33,7 @@ const Medicare = () => (
     <HeroSection
       subtitle="Medicare Made Simple"
       title="Understanding Your Medicare Options"
-      description="Choosing the right Medicare plan doesn't have to be overwhelming. We break down your options so you can make an informed decision."
+      description="Choosing the right plan made simple."
       ctaText="Compare Plans Now"
     />
 
