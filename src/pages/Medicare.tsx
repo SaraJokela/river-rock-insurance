@@ -38,7 +38,7 @@ const Medicare = () => (
     />
 
     <section className="py-12 md:py-24">
-      <div className="container space-y-16">
+      <div className="container space-y-12 md:space-y-16">
         {plans.map((plan) => (
           <div key={plan.id} id={plan.id} className="scroll-mt-24">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
