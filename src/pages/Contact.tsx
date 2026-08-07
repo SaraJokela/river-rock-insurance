@@ -12,7 +12,7 @@ const contactInfo = [
 
 const Contact = () => (
   <Layout>
-    <section className="bg-primary text-primary-foreground py-16 md:py-24">
+    <section className="bg-primary text-primary-foreground py-12 md:py-24">
       <div className="container text-center max-w-2xl mx-auto space-y-4">
         <span className="inline-block bg-accent/20 text-accent-foreground border border-accent/30 text-sm font-medium px-4 py-1.5 rounded-full">
           Get in Touch
@@ -22,7 +22,7 @@ const Contact = () => (
       </div>
     </section>
 
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">

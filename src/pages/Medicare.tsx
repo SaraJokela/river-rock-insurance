@@ -37,8 +37,8 @@ const Medicare = () => (
       ctaText="Compare Plans Now"
     />
 
-    <section className="py-16 md:py-24">
-      <div className="container space-y-16">
+    <section className="py-12 md:py-24">
+      <div className="container space-y-12 md:space-y-16">
         {plans.map((plan) => (
           <div key={plan.id} id={plan.id} className="scroll-mt-24">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -66,7 +66,7 @@ const Medicare = () => (
       </div>
     </section>
 
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-12 md:py-24 bg-secondary">
       <div className="container max-w-xl mx-auto">
         <LeadCaptureForm heading="Not Sure Which Plan Is Right for You?" subheading="Talk to a licensed Medicare agent. We'll compare plans and find the best fit — at no cost to you." />
       </div>

@@ -21,7 +21,7 @@ const About = () => (
       ctaLink="/contact"
     />
 
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((s) => (
@@ -56,7 +56,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-12 md:py-24 bg-secondary">
       <div className="container max-w-xl mx-auto">
         <LeadCaptureForm heading="Let's Talk About Your Medicare Options" subheading="Reach out today — we'd love to help you find the right plan." />
       </div>
