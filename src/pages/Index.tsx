@@ -30,7 +30,7 @@ const Index = () => (
     />
 
     {/* Services */}
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our Medicare & Health Insurance Services</h2>
@@ -58,7 +58,7 @@ const Index = () => (
     </section>
 
     {/* Why Choose Us */}
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-12 md:py-24 bg-secondary">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -86,7 +86,7 @@ const Index = () => (
     </section>
 
     {/* Locations */}
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Serving Communities Across Two States</h2>
@@ -112,7 +112,7 @@ const Index = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+    <section className="py-12 md:py-24 bg-primary text-primary-foreground">
       <div className="container text-center max-w-2xl mx-auto space-y-6">
         <h2 className="text-2xl md:text-3xl font-bold">Ready to Find the Right Medicare Plan?</h2>
         <p className="opacity-90">Talk to a licensed agent today. It's free, fast, and there's zero obligation.</p>

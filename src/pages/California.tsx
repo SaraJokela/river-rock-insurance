@@ -18,7 +18,7 @@ const California = () => (
       description="River Rock Insurance has helped California residents find the right Medicare plans since 2003. We serve Sacramento, Roseville, and surrounding communities."
     />
 
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="max-w-3xl mx-auto space-y-6 mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Your Local California Medicare Brokerage</h2>
@@ -49,7 +49,7 @@ const California = () => (
       </div>
     </section>
 
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-12 md:py-24 bg-secondary">
       <div className="container max-w-xl mx-auto">
         <LeadCaptureForm heading="Get California Medicare Help Today" subheading="Connect with a local licensed agent who knows the California Medicare landscape." />
       </div>

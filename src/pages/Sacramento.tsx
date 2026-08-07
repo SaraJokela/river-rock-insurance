@@ -11,7 +11,7 @@ const Sacramento = () => (
       description="River Rock Insurance Services provides personalized Medicare guidance to Sacramento County residents. Compare plans from top carriers — free of charge."
     />
 
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">

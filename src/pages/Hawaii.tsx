@@ -11,7 +11,7 @@ const Hawaii = () => (
       description="River Rock Insurance Services brings over 20 years of Medicare expertise to the Aloha State. Find the right plan for island living."
     />
 
-    <section className="py-16 md:py-24">
+    <section className="py-12 md:py-24">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
