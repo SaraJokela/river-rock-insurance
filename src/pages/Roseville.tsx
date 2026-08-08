@@ -8,7 +8,7 @@ const Roseville = () => (
     <HeroSection
       subtitle="Roseville Medicare Specialists"
       title="Medicare Insurance in Roseville, CA"
-      description="Serving Roseville, Rocklin, Lincoln, and the greater Placer County area with personalized Medicare guidance since 2003."
+      description="Personalized Medicare guidance in Placer County since 2003."
     />
 
     <section className="py-12 md:py-24">
