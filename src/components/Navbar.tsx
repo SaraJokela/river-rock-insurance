@@ -12,6 +12,7 @@ const navLinks = [
     children: [
       { label: "California", to: "/california" },
       { label: "Sacramento", to: "/sacramento" },
+      { label: "Roseville", to: "/roseville" },
       { label: "Hawaii", to: "/hawaii" },
     ],
   },
